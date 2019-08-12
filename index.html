@@ -13,7 +13,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/screen.css" />
 </head>
@@ -45,18 +45,19 @@
           </div>
         </div>
       </div>
-
     </div>
-	  <div class="row">
-            <select id="mode" class="form-control" onchange="window.excelFormulaBeautifier.examples.beautifier.changeMode(this.value)">
-		                    <option value="beautify">Beautify</option>
-		                    <option value="minify">Minify</option>
-		                    <option value="js">Formula to JavaScript</option>
-                        <option value="csharp">Formula to C#</option>
-                        <option value="python">Formula to Python</option>
-		                </select>	  
-	  </div>
-	  
+	<div class="row">
+		<div class="col-md-4" style="padding-top: 1.5em; padding-bottom: 1em">
+			<label>Formatting:</label>
+			<select id="mode" class="form-control" onchange="window.excelFormulaBeautifier.examples.beautifier.changeMode(this.value)">
+				<option value="beautify">Beautify</option>
+				<option value="minify">Minify</option>
+				<option value="js">Formula to JavaScript</option>
+				<option value="csharp">Formula to C#</option>
+				<option value="python">Formula to Python</option>
+			</select>	  
+		</div>
+	</div>
     <div class="row">
       <div class="col-md-12">
         <div class="formula">
